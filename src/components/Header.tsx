@@ -7,10 +7,10 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ onPostClick }) => {
   return (
-    <header className="bg-blue-700 text-white p-4 shadow-md fixed top-0 left-0 right-0 z-10">
+    <header className="bg-blue-700 text-white p-2 sm:p-4 shadow-md fixed top-0 left-0 right-0 z-10">
       <div className="mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold">SnapShare</Link>
-        <Link to="#" onClick={onPostClick} className="text-2xl font-bold">Post</Link>
+        <Link to="/" className="text-lg sm:text-2xl font-bold">SnapShare</Link>
+        <Link to="#" onClick={onPostClick} className="text-lg sm:text-2xl font-bold">Post</Link>
       </div>
     </header>
   );

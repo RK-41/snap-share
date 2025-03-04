@@ -1,9 +1,9 @@
 @import 'tailwindcss';
 
 body {
-	background-color: #1f2937; /* Dark gray background */
-	color: #e5e7eb; /* Light gray text */
-	font-family: 'Inter', sans-serif; /* Modern font */
+	background-color: #1f2937;
+	color: #e5e7eb;
+	font-family: 'Inter', sans-serif;
 }
 
 h1,
@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Poppins', sans-serif; /* Use a different font for headings */
+	font-family: 'Poppins', sans-serif;
 }
 
 .scrollbar-thin {

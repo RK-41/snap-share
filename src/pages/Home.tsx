@@ -8,8 +8,8 @@ interface HomeProps {
 
 const Home: React.FC<HomeProps> = ({ postFormRef }) => {
   return (
-    <div className="w-full p-6 flex flex-col gap-4 bg-gray-950">
-      <h1 className="text-5xl text-center font-bold mb-4 text-white">Home Feed</h1>
+    <div className="w-full p-4 sm:px-6 flex flex-col gap-4 bg-gray-950 min-h-screen pt-20">
+      <h1 className="text-4xl sm:text-5xl text-center font-bold mb-4 text-white">Home Feed</h1>
       <div ref={postFormRef} className="scroll-mt-20">
         <PostForm />
       </div>

@@ -16,7 +16,7 @@ function App() {
       <Router>
         <div className="scroll-smooth scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
           <Header onPostClick={handlePostClick} />
-          <main className="mt-16">
+          <main>
             <Routes>
               <Route path="/" element={<Home postFormRef={postFormRef} />} />
             </Routes>
