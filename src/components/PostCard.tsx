@@ -47,16 +47,16 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
               ? `Updated ${formatDate(post.updatedAt)}`
               : `Posted ${formatDate(post.createdAt)}`}
           </span>
-          <div className="flex space-x-2">
+          <div className="flex flex-wrap justify-end space-x-2 [&>*:first-child]:ml-0">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="text-blue-600 hover:text-blue-500 cursor-pointer transition-colors"
+              className="text-blue-600 hover:text-blue-500 cursor-pointer transition-colors text-center"
             >
               Edit
             </button>
             <button
               onClick={() => setIsDeleteDialogOpen(true)}
-              className="text-red-600 hover:text-red-500 cursor-pointer transition-colors"
+              className="text-red-600 hover:text-red-500 cursor-pointer transition-colors text-center"
             >
               Delete
             </button>

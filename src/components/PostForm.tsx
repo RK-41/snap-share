@@ -101,7 +101,7 @@ const PostForm: React.FC<PostFormProps> = ({ editMode = false, post, onSave }) =
       )}
 
       <div className="flex [@media(max-width:360px)]:flex-col gap-2 justify-between items-center">
-        <label className="[@media(max-width:360px)]:w-32 [@media(max-width:360px)]:py-1 rounded-full text-center cursor-pointer bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 transition-colors">
+        <label className="[@media(max-width:360px)]:w-34 [@media(max-width:360px)]:py-1 rounded-full text-center cursor-pointer bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 transition-colors">
           <input
             type="file"
             accept="image/*"
@@ -113,9 +113,9 @@ const PostForm: React.FC<PostFormProps> = ({ editMode = false, post, onSave }) =
 
         <button
           type="submit"
-          className="[@media(max-width:360px)]:w-32 [@media(max-width:360px)]:py-1 rounded-full text-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 transition-colors cursor-pointer"
+          className="[@media(max-width:360px)]:w-34 [@media(max-width:360px)]:py-1 rounded-full text-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 transition-colors cursor-pointer"
         >
-          {editMode ? 'Save Changes' : 'Post'}
+          {editMode ? 'Save' : 'Post'}
         </button>
       </div>
     </form>
