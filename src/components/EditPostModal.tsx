@@ -16,8 +16,8 @@ const EditPostModal: React.FC<EditPostModalProps> = ({ isOpen, onClose, post, on
     <Dialog open={isOpen} onClose={onClose} className="relative z-10 w-xl max-w-xl mx-auto">
       <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
       <div className="w-full fixed inset-0 flex items-center justify-center p-4 max-h-screen overflow-y-auto">
-        <Dialog.Panel className="mx-auto w-xl rounded-xl overflow-hidden bg-white relative max-h-[95vh] overflow-y-auto">
-          <Dialog.Title className="text-lg text-black font-bold flex justify-between items-center p-4">
+        <Dialog.Panel className="mx-auto w-xl rounded-xl overflow-hidden bg-white relative max-h-[80vh] overflow-y-auto">
+          <Dialog.Title className="text-lg text-black font-bold flex justify-between items-center px-4 pt-4">
             <p>Edit Post</p>
             <button title="Close" onClick={onClose} className="w-max font-bold rounded cursor-pointer">
               <XMarkIcon className="w-6 h-6" />

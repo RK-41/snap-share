@@ -73,7 +73,7 @@ const PostForm: React.FC<PostFormProps> = ({ editMode = false, post, onSave }) =
       <div className="mb-4">
         <textarea
           ref={textareaRef}
-          className="w-full p-3 border border-gray-600 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-3 border border-gray-600 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-700"
           rows={3}
           placeholder="What's on your mind?"
           value={text}
@@ -90,7 +90,7 @@ const PostForm: React.FC<PostFormProps> = ({ editMode = false, post, onSave }) =
           />
           <button
             type="button"
-            className="absolute size-8 top-2 right-2 bg-red-500 text-white p-1 rounded-full cursor-pointer"
+            className="absolute size-8 top-2 right-2 shadow-md backdrop-blur-sm bg-black/20 shadow-black text-white text-bold p-1 rounded-full cursor-pointer"
             onClick={() => {
               setImagePreview(undefined);
             }}
